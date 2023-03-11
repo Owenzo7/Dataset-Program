@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mock Data and Quality Score Calculator</title>
+  </head>
+  <body>
+    <h1>Mock Data and Quality Score Calculator</h1>
+    <p>Open the browser console to view the results.</p>
+
+    <script src="main.js" defer></script>
+    <script>
+      // Here, we can call the functions defined in main.js
+      const messages = generateMockDataset(200000, 200, 10);
+      const authorScores = calculateQualityScores(messages);
+      const overallScore = calculateOverallQualityScore(messages);
+      console.log(authorScores);
+      console.log(overallScore);
+    </script>
+  </body>
+</html>
